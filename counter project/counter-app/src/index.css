@@ -1,0 +1,51 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  color:black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color:lightskyblue;
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color:lightblue;
+  cursor: not-allowed;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

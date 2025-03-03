@@ -6,6 +6,8 @@ function Section() {
     
         <div style={{height:"500px", width:"100%",backgroundColor:"black",marginTop:"75px"}}> 
           <h2 style={{color:"white",fontSize:"2rem"}}>CRYPTO PLATFORM</h2>
+
+          
         </div>
       
     </>

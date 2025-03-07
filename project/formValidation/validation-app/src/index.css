@@ -6,7 +6,6 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  border: 9px solid white;
 }
 
 .main-div{
@@ -14,8 +13,6 @@ body {
   width: 350px;
   text-align: center;
   align-items: center;
-  border-top-left-radius: 30%;
-  border-bottom-right-radius: 30%;
 }
 .container {
  
@@ -92,4 +89,8 @@ button {
 button:hover {
   background: #27a57c;
   box-shadow: 0 5px 15px rgba(46, 191, 145, 0.3);
+}
+.outdiv{
+  display: grid;
+  justify-self: flex-start;
 }

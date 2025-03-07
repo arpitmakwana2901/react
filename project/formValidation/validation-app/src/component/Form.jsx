@@ -7,9 +7,9 @@ const Form = () => {
         password: ""
     });
 
-    const [showData, setShowData] = useState({});
+    const [showData, setShowData] = useState();
     const [errorData, setErrorData] = useState({});
-
+    
     function handleSubmit(event) {
         event.preventDefault();
         if (validation()) {
@@ -41,7 +41,11 @@ const Form = () => {
         }
         setErrorData(errorObject);
         return valid;
+        
+
     }
+
+
 
     return (
         <div className="border-8 border-white rounded-3xl w-96 h-[450px] bg-transparent flex flex-col main-div items-center text-center p-6">
@@ -84,6 +88,16 @@ const Form = () => {
                     </div>
                 </div>
             </form>
+            {
+                showData && (   
+                    <div className='outdiv'>
+                        <h2>User Name:{showData.userName}</h2>
+                        <h2>Email:{showData.email}</h2>
+                        <h2>Password:{showData.password}</h2>
+                    </div>
+                    
+                )
+            }
         </div>
     );
 }

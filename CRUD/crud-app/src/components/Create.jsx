@@ -21,15 +21,12 @@ const Create = () => {
       .then((res) => {
         console.log(res);
         alert("product added successfully");
-        navigate("/");
+        // navigate("/");
       })
       .catch((err) => {
         alert(err);
       });
   }
-  
-
-  
   
   return (
     <div>

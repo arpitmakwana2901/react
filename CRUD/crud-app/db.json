@@ -1,0 +1,10 @@
+{
+    "product":[
+        {"id":1,
+        "name":"nike",
+        "description":"sports",
+        "price":100
+    }
+    
+    ]
+}   

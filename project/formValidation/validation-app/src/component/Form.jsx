@@ -1,108 +1,91 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
 
 const Form = () => {
-    const[userData,setUserData] = useState({
-        userName:"",
-        email:"",
-        password:""
+    const [userData, setUserData] = useState({
+        userName: "",
+        email: "",
+        password: ""
     });
 
-    const[showData,setShowData] = useState({});
-    const[errorData,setErrorData] = useState({});
+    const [showData, setShowData] = useState({});
+    const [errorData, setErrorData] = useState({});
 
-    function handleSubmit(event){
+    function handleSubmit(event) {
         event.preventDefault();
-        if(validation()){
+        if (validation()) {
             setShowData(userData);
-            userData({
-                userName:"",
-                email:"",
-                password:""
-            })
+            setUserData({
+                userName: "",
+                email: "",
+                password: ""
+            });
         }
     }
 
-    function validation(){
+    function validation() {
         let valid = true;
         let errorObject = {};
-        if(userData.userName.trim()==""){
-            errorObject.userName = "Invalid UserName"
+        if (userData.userName.trim() === "") {
+            errorObject.userName = "Invalid UserName";
             valid = false;
         }
 
-        if(userData.email.trim()==""){
-            errorObject.email = "Invalid Email"
+        if (userData.email.trim() === "") {
+            errorObject.email = "Invalid Email";
             valid = false;
         }
 
-        if(userData.password.trim()==""){
-            errorObject.password = "Invalid Password"
+        if (userData.password.trim() === "") {
+            errorObject.password = "Invalid Password";
             valid = false;
         }
         setErrorData(errorObject);
         return valid;
     }
-  return (
-    <div style={{border:"10px solid white",borderRadius:"2rem",width:"370px", height:"450px",backgroundColor:"transparent", alignItems:"center",textAlign:"center"}}>
-        <h1 style={{color:"skygrey"}}>Registration Form</h1>
-        <form onSubmit={handleSubmit}>
-            <div style={{}}>
-            <div  style={{textAlign:"center"}}>
-                <label htmlFor="username">User Name :</label>
-                <input type="text" placeholder='Please Enter UserName' 
-                id='username'
-                style={{width:"200px",alignItems:"center",textAlign:"center"}}
-                value={userData.userName}
-                onChange={((event)=>
-                    setUserData({...userData,userName:event.target.value})
-                )} />
-                
-            {
-                errorData.userName && (
-                    <p style={{color:"red"}}>{errorData.userName}</p>
-                )
-            }
-            </div>
 
-            <div style={{textAlign:"center"}}>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id='email' placeholder='Please Enter Email'
-            style={{width:"200px",textAlign:"center"}}
-            value={userData.email}
-            onChange={((event)=>setUserData({...userData,email,email:event.target.value}))} />
+    return (
+        <div className="border-8 border-white rounded-3xl w-96 h-[450px] bg-transparent flex flex-col main-div items-center text-center p-6">
+            <h1 className="text-gray-500 text-xl font-bold">Registration Form</h1>
+            <form onSubmit={handleSubmit} className="w-full">
+                <div className="space-y-4 border">
+                    <div>
+                        <label htmlFor="username" className="block font-medium">User Name:</label>
+                        <input type="text" placeholder='Please Enter UserName' 
+                            id='username'
+                            className="w-52 p-2 border rounded-md text-center input"
+                            value={userData.userName}
+                            onChange={(event) => setUserData({ ...userData, userName: event.target.value })} />
+                        {errorData.userName && <p className="text-red-500 text-sm">{errorData.userName}</p>}
+                    </div>
 
-            {
-                errorData.email && (
-                    <p style={{color:"red"}}>{errorData.email}</p>
-                )
-            }
-            </div>
+                    <div>
+                        <label htmlFor="email" className="block font-medium">Email:</label>
+                        <input type="email" id='email' placeholder='Please Enter Email'
+                            className="w-52 p-2 border rounded-md text-center"
+                            value={userData.email}
+                            onChange={(event) => setUserData({ ...userData, email: event.target.value })} />
+                        {errorData.email && <p className="text-red-500 text-sm">{errorData.email}</p>}
+                    </div>
 
-            <div style={{textAlign:"center"}}>
-                <label htmlFor="password">Password:</label>
-                <input type="password" id='password'
-                placeholder='Please Enter Password'
-                style={{width:"200px",textAlign:"center"}}
-                value={userData.password}
-                onChange={((event)=>setUserData({...userData,password:event.target.value}))} />
-                {
-                    errorData.password &&(
-                        <p style={{color:"red"}}>{errorData.password}</p>
-                    )
-                }
-            </div>
+                    <div>
+                        <label htmlFor="password" className="block font-medium">Password:</label>
+                        <input type="password" id='password' placeholder='Please Enter Password'
+                            className="w-52 p-2 border rounded-md text-center"
+                            value={userData.password}
+                            onChange={(event) => setUserData({ ...userData, password: event.target.value })} />
+                        {errorData.password && <p className="text-red-500 text-sm">{errorData.password}</p>}
+                    </div>
 
-            <div style={{marginLeft:"100px"}}>
-                <button type='submit' 
-                style={{width:"150px"}}
-                >Submit</button>
-            </div>
-            </div>
-        </form>
-
-    </div>
-  )
+                    <div>
+                        <button type='submit' 
+                            className="w-36 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    );
 }
 
-export default Form
+export default Form;

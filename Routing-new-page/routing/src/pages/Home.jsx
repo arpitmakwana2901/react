@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import image from '../assets/crypto_img.jpg'
+import instragram from '../assets/instragram.jpg'
+import facebook from '../assets/Facebook.png'
+import twitter from '../assets/twitter.png'
 const Home = () => {
   return (
     <>
@@ -44,6 +47,26 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+<footer className="bg-gray-800 text-white py-6 h-12 fixed bottom-0 w-full flex justify-evenly items-center text-center">
+  <div className="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
+    <div className="crypto-m5-footer">
+      <p className="text-xl font-semibold">Crypto M5</p>
+    </div>
+    <div className="copyright-footer">
+      <p className="text-sm">© Copyright 2025 Mobirise</p>
+    </div>
+    <div className="icon-footer flex space-x-4  gap-4">
+      <img className="footer-instagram w-6 h-6" src={instragram} alt="Instagram" />
+      <img className="footer-facebook w-6 h-6" src={facebook} alt="Facebook" />
+      <img className="footer-twitter w-6 h-6" src={twitter} alt="Twitter" />
+    </div>
+  </div>
+</footer>
+
+
+
+
 
 
     </>

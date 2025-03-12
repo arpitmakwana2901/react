@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div>
      <Link to={"/createProduct"}> <button>Create Product</button></Link>
-      <table style={{ border: "1px solid black" }}>
+      <table border={"1"}>
         <thead>
           <tr>
             <th>Name</th>

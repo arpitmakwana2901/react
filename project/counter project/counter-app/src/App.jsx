@@ -12,14 +12,14 @@ const App = () => {
     <>
       <div>
         <h1>{count}</h1>
-        <button onClick={handleInc}>Increment</button>
+        <button onClick={handleInc}>Deoposit</button>
         <button
           disabled={count === 0}
           onClick={() => {
             setCount(count - 1);
           }}
         >
-          Decrement
+          Withdraw
         </button>
       </div>
     </>

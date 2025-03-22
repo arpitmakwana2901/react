@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": "ecf7",
+      "userName": "jay zala",
+      "email": "jayzala@gmail.com",
+      "password": "jayzala"
+    },
+    {
+      "id": "8907",
+      "userName": "arpit",
+      "email": "arpit@gmail.com",
+      "password": "arpit"
+    },
+    {
+      "id": "c30f",
+      "userName": "arpit",
+      "email": "arpit29@gamil.com",
+      "password": "arpit"
+    },
+    {
+      "id": "df35",
+      "userName": "arpit makwana",
+      "email": "jay@gmail.com",
+      "password": "jay"
+    },
+    {
+      "id": "1914",
+      "userName": "smith pandya",
+      "email": "smith@gmail.com",
+      "password": "smith"
+    },
+    {
+      "id": "a2c4",
+      "userName": "arpit",
+      "email": "arpit4018@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "4395",
+      "userName": "tanuj",
+      "email": "tanuj@gmail.com",
+      "password": "tanuj"
+    }
+  ]
+}

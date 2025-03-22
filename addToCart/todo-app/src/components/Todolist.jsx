@@ -71,6 +71,7 @@ const Todolist = () => {
             addCart.map((element, index) => (
               <div key={index} style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <h3>{element}</h3>
+                <button onClick={() => editFromCart(element)}>Edit</button>
                 <button onClick={() => removeFromCart(element)}>Remove</button>
               </div>
             ))

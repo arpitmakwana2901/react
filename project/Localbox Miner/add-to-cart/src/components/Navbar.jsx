@@ -42,12 +42,12 @@
             <div style={{ width: "15%", fontSize: "20px" }}>Feature</div>
             <div style={{ width: "15%", fontSize: "20px" }}>Contact</div>
             <div>
-              <button
+              {/* <button
                 onClick={() => handleClick()}
                 className="bg-indigo-600 hover:not-focus:bg-indigo-700 rounded-[20px] w-[100px] h-[30px] text-[white] hover:shadow-lg"
               >
                 Show Cart
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

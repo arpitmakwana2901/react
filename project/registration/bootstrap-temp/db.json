@@ -41,6 +41,18 @@
       "userName": "tanuj",
       "email": "tanuj@gmail.com",
       "password": "tanuj"
+    },
+    {
+      "id": "b588",
+      "userName": "darshan",
+      "email": "darshan@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "eff7",
+      "userName": "daivik",
+      "email": "daivik@gmail.com",
+      "password": "daivik"
     }
   ]
 }

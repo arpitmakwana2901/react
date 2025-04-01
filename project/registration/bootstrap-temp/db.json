@@ -53,6 +53,12 @@
       "userName": "daivik",
       "email": "daivik@gmail.com",
       "password": "daivik"
+    },
+    {
+      "id": "32ee",
+      "userName": "dhruv patel",
+      "email": "dhruvpatel@gmail.com",
+      "password": "dhruv123"
     }
   ]
 }

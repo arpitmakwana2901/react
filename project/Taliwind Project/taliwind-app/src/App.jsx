@@ -84,12 +84,6 @@ const App = () => {
                   <strong>Price: </strong>${item.price}
                 </p>
                 <button
-                  className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
-                  onClick={() => editFromCart(item)}
-                >
-                  Edit
-                </button>
-                <button
                   className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition ml-2"
                   onClick={() => removeFromCart(item)}
                 >

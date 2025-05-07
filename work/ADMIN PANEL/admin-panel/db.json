@@ -1,0 +1,124 @@
+{
+  "product": [
+    {
+      "id": "12",
+      "name": "Sneaker",
+      "url": "https://m.media-amazon.com/images/I/614aiM56siL.SY695.jpg",
+      "category": "Shoes",
+      "price": 9000
+    },
+    {
+      "id": "13",
+      "name": "Running boots",
+      "url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/312090/01/sv01/fnd/IND/fmt/png/Cell-Fraction-Fade-Men's-Running-Shoes",
+      "category": "Shoes",
+      "price": "8000"
+    },
+    {
+      "id": "17",
+      "name": "Bluetooth Headphones",
+      "url": "https://m.media-amazon.com/images/I/31PFiCIw3WL.SX300_SY300_QL70_FMwebp.jpg",
+      "category": "Electronics",
+      "price": 4500
+    },
+    {
+      "id": "18",
+      "name": "Formal Shirt",
+      "url": "https://i.pinimg.com/736x/06/98/50/069850714017c4c4aa332559432c4196.jpg",
+      "category": "Clothing",
+      "price": 2200
+    },
+    {
+      "id": "21",
+      "name": "Fiction Book",
+      "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      "category": "Books",
+      "price": 800
+    },
+    {
+      "id": "aaa2",
+      "name": "pants",
+      "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSAUGE0JDWciNaB9L1QnQT_lN8ocKknFY4Nw-LG8M_VBuL0rhKz8bBYQjqFGXPfN1WNx1296t9UPPmGJRnkgefAF75DEUZ39POIpB7N5xqA__UhQsOdesZkIw",
+      "category": "Clothing",
+      "price": "2000"
+    },
+    {
+      "id": "ae0a",
+      "name": "premium",
+      "url": "https://images.meesho.com/images/products/434094613/83v0e_1200.jpg",
+      "category": "Electronics",
+      "price": "2000"
+    },
+    {
+      "id": "1f7a",
+      "name": "Headset",
+      "url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUSNyfuPRCwet9acBpBcssoeoShhsgkcVMEyIrCd5K84pN8zjDnEblz2DaVEPrwecFmxZqfCwReLDE11-ITw50zJCI1XjKJ9ysoiPjI88",
+      "category": "Electronics",
+      "price": "3500"
+    },
+    {
+      "id": "3e3d",
+      "name": "iphone",
+      "url": "https://www.zdnet.com/a/img/resize/9f3fcf92f17d47c88823e7f2c0f1454ecd3e5140/2024/09/19/8da68e24-08b1-467a-9062-a90a96c1d879/dsc02198.jpg?auto=webp&fit=crop&height=900&width=1200",
+      "category": "PH",
+      "price": "80000"
+    },
+    {
+      "id": "b080",
+      "name": "Jacket",
+      "url": "https://media.darveys.com/catalog/product/c/l/clot_041124_81709_1.jpg",
+      "category": "Clothes",
+      "price": "5000"
+    }
+  ],
+  "user": [
+    {
+      "id": "ecf7",
+      "userName": "jay zala",
+      "email": "jayzala@gmail.com",
+      "password": "jayzala"
+    },
+    {
+      "id": "8907",
+      "userName": "arpit",
+      "email": "arpit@gmail.com",
+      "password": "arpit"
+    },
+    {
+      "id": "c30f",
+      "userName": "arpit",
+      "email": "arpit29@gamil.com",
+      "password": "arpit"
+    },
+    {
+      "id": "df35",
+      "userName": "arpit makwana",
+      "email": "jay@gmail.com",
+      "password": "jay"
+    },
+    {
+      "id": "1914",
+      "userName": "smith pandya",
+      "email": "smith@gmail.com",
+      "password": "smith"
+    },
+    {
+      "id": "a2c4",
+      "userName": "arpit",
+      "email": "arpit4018@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "4395",
+      "userName": "tanuj",
+      "email": "tanuj@gmail.com",
+      "password": "tanuj"
+    },
+    {
+      "id": "2818",
+      "userName": "rohit",
+      "email": "rohit@gmail.com",
+      "password": "rohit"
+    }
+  ]
+}

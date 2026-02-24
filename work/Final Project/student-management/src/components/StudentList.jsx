@@ -37,11 +37,11 @@ const StudentList = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-50 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4 sm:mb-0 relative after:absolute after:-bottom-2 after:left-0 after:w-20 after:h-1 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-24">
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4 sm:mb-0 relative after:absolute after:-bottom-2 after:left-0 after:w-20 after:h-1 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-24">
             Student Dashboard
           </h1>
           <Link
@@ -68,59 +68,81 @@ const StudentList = () => {
         </div>
 
         {/* Table Container */}
-        <div className="bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-3xl">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-3xl">
           {loading ? (
             <div className="flex justify-center items-center p-12">
-              <svg className="animate-spin h-8 w-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              <svg
+                className="animate-spin h-8 w-8 text-blue-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
               </svg>
             </div>
           ) : (
             <>
               {/* Table */}
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                  <thead className="bg-gray-50 dark:bg-gray-700">
                     <tr>
-                      {["ID", "Name", "Username", "Email", "Phone", "Website", "Actions"].map(
-                        (header) => (
-                          <th
-                            key={header}
-                            className="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative"
-                          >
-                            <span className="inline-block relative">
-                              {header}
-                              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-                            </span>
-                          </th>
-                        )
-                      )}
+                      {[
+                        "ID",
+                        "Name",
+                        "Username",
+                        "Email",
+                        "Phone",
+                        "Website",
+                        "Actions",
+                      ].map((header) => (
+                        <th
+                          key={header}
+                          className="px-6 py-4 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider group relative"
+                        >
+                          <span className="inline-block relative">
+                            {header}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+                          </span>
+                        </th>
+                      ))}
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
                     {data.data &&
                       data.data.map((user) => (
                         <tr
                           key={user.id}
-                          className="hover:bg-gray-50 transition-colors duration-200 transform hover:scale-[1.002]"
+                          className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 transform hover:scale-[1.002]"
                         >
-                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">
                             {user.id}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                             {user.name}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                             {user.userName}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                             {user.email}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                             {user.phone}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-500 hover:text-blue-700 transition-colors duration-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200">
                             <a
                               href={`http://${user.website}`}
                               target="_blank"
@@ -161,18 +183,22 @@ const StudentList = () => {
               </div>
 
               {/* Pagination */}
-              <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between">
-                <div className="text-sm text-gray-500">
-                  Page <span className="font-medium">{count}</span> of <span className="font-medium">{Math.ceil(data.items / 5)}</span>
+              <div className="px-6 py-4 bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-600 flex items-center justify-between">
+                <div className="text-sm text-gray-500 dark:text-gray-300">
+                  Page <span className="font-medium">{count}</span> of{" "}
+                  <span className="font-medium">
+                    {Math.ceil(data.items / 5)}
+                  </span>
                 </div>
                 <div className="flex space-x-2">
                   <button
                     disabled={count === 1}
                     onClick={() => setCount(count - 1)}
-                    className={`px-4 py-2 rounded-md flex items-center ${count === 1
-                      ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                      : "bg-white text-gray-700 hover:bg-gray-100 transition-colors duration-200 shadow-sm hover:shadow-md"
-                      }`}
+                    className={`px-4 py-2 rounded-md flex items-center ${
+                      count === 1
+                        ? "bg-gray-100 dark:bg-gray-600 text-gray-400 cursor-not-allowed"
+                        : "bg-white dark:bg-gray-600 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-500 transition-colors duration-200 shadow-sm hover:shadow-md"
+                    }`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -191,10 +217,11 @@ const StudentList = () => {
                   <button
                     disabled={count === Math.ceil(data.items / 5)}
                     onClick={() => setCount(count + 1)}
-                    className={`px-4 py-2 rounded-md flex items-center ${count === Math.ceil(data.items / 5)
-                      ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                      : "bg-white text-gray-700 hover:bg-gray-100 transition-colors duration-200 shadow-sm hover:shadow-md"
-                      }`}
+                    className={`px-4 py-2 rounded-md flex items-center ${
+                      count === Math.ceil(data.items / 5)
+                        ? "bg-gray-100 dark:bg-gray-600 text-gray-400 cursor-not-allowed"
+                        : "bg-white dark:bg-gray-600 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-500 transition-colors duration-200 shadow-sm hover:shadow-md"
+                    }`}
                   >
                     Next
                     <svg

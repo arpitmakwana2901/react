@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 to-blue-600 shadow-xl">
+    <nav className="bg-gradient-to-r from-indigo-600 to-blue-600 shadow-xl dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
@@ -21,14 +21,14 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 to="/studentList"
-                className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 transition-colors duration-200"
+                className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 transition-colors duration-200 dark:bg-blue-800 dark:hover:bg-blue-900"
               >
                 Dashboard
               </Link>
           
               <Link
                 to="/studentDetails/1"
-                className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-blue-700 hover:bg-opacity-75 transition-colors duration-200"
+                className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-blue-700 hover:bg-opacity-75 transition-colors duration-200 dark:hover:bg-blue-800"
               >
                 About
               </Link>
@@ -40,13 +40,13 @@ const Navbar = () => {
             <div className="ml-4 flex items-center md:ml-6 space-x-2">
               <Link
                 to="/signin"
-                className="px-4 py-2 rounded-md text-sm font-medium text-white hover:bg-blue-700 hover:bg-opacity-75 transition-colors duration-200"
+                className="px-4 py-2 rounded-md text-sm font-medium text-white hover:bg-blue-700 hover:bg-opacity-75 transition-colors duration-200 dark:hover:bg-blue-800"
               >
                 Login
               </Link>
               <Link
                 to="/signup"
-                className="px-4 py-2 rounded-md text-sm font-medium text-blue-600 bg-white hover:bg-gray-100 transition-colors duration-200"
+                className="px-4 py-2 rounded-md text-sm font-medium text-blue-600 bg-white hover:bg-gray-100 transition-colors duration-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
               >
                 Sign Up
               </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
               Login
             </Link>
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-blue-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-800"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>

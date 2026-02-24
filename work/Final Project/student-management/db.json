@@ -2,7 +2,7 @@
   "students": [
     {
       "id": "1",
-      "name": "Alice Johnson",
+      "name": "Alice Johnsonn",
       "userName": "alicej",
       "email": "alice.johnson@example.com",
       "phone": "555-1234",
@@ -79,27 +79,13 @@
       "email": "julia.adams@example.com",
       "phone": "555-0987",
       "website": "juliaadams.me"
-    },
-    {
-      "id": "8966",
-      "name": "Arpit Makwana",
-      "userName": "arpit",
-      "email": "arpit@gmail.com",
-      "phone": "8780545487",
-      "website": "flipcart.com"
     }
   ],
   "user": [
     {
-      "id": "2f17",
+      "id": "22f8",
       "userName": "arpit",
       "email": "arpit@gmail.com",
-      "password": "arpit"
-    },
-    {
-      "id": "db6d",
-      "userName": "arpit",
-      "email": "arpitmakwana7376@gmail.com",
       "password": "arpit"
     }
   ]

@@ -94,7 +94,7 @@ const SignIn = () => {
                 onChange={(event) => setEmail(event.target.value)}
                 className="w-full pl-10 pr-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200"
               />
-            </div>
+            </div>  
           </div>
 
           <div>

@@ -1,0 +1,35 @@
+{
+  "product": [
+    {
+      "id": "ce54",
+      "title": "shoes",
+      "thumbnail": "https://admin.mochishoes.com/product/359-397129/660/359-397129O16.jpg",
+      "brand": "puma",
+      "category": "footware",
+      "price": "2900",
+      "description": "shoes ",
+      "rating": "9"
+    },
+    {
+      "id": "d9e6",
+      "title": "iphone 17 pro max",
+      "thumbnail": "https://m.media-amazon.com/images/I/71R8VsJ07nL.jpg",
+      "category": "moblie",
+      "price": "175000"
+    },
+    {
+      "id": "e29b",
+      "title": "iphone 16",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBuLVIT-McQjUFzDxbxYMUY-gBqysWig7yOQ&s",
+      "category": "electronics",
+      "price": "90000"
+    },
+    {
+      "id": "2b07",
+      "title": "Camera",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s",
+      "category": "electronics",
+      "price": "50000"
+    }
+  ]
+}

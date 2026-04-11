@@ -1,0 +1,243 @@
+/* Page Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* Add Product Button */
+a button {
+  margin: 30px;
+  padding: 12px 22px;
+  background: linear-gradient(45deg, #4e73df, #1cc88a);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+a button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Products Grid */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 40px 60px;
+}
+
+/* Product Card */
+.product-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.product-details h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons Container */
+.product-card button {
+  margin: 10px 15px 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Edit Button */
+.product-card button:first-of-type {
+  background: #36b9cc;
+  color: white;
+}
+
+.product-card button:first-of-type:hover {
+  background: #2c9faf;
+}
+
+/* Delete Button */
+.product-card button:last-of-type {
+  background: #e74a3b;
+  color: white;
+}
+
+.product-card button:last-of-type:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 20px;
+  }
+
+  a button {
+    margin: 20px;
+  }
+}/* Page Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* Add Product Button */
+a button {
+  margin: 30px;
+  padding: 12px 22px;
+  background: linear-gradient(45deg, #4e73df, #1cc88a);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+a button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Products Grid */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 40px 60px;
+}
+
+/* Product Card */
+.product-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.product-details h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons Container */
+.product-card button {
+  margin: 10px 15px 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Edit Button */
+.product-card button:first-of-type {
+  background: #36b9cc;
+  color: white;
+}
+
+.product-card button:first-of-type:hover {
+  background: #2c9faf;
+}
+
+/* Delete Button */
+.product-card button:last-of-type {
+  background: #e74a3b;
+  color: white;
+}
+
+.product-card button:last-of-type:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 20px;
+  }
+
+  a button {
+    margin: 20px;
+  }
+}

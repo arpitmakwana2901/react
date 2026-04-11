@@ -1,0 +1,51 @@
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between; /* Brand left, links right */
+  align-items: center;
+  background-color: #1f2937; /* Dark gray */
+  padding: 10px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand name styling */
+nav h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+/* Navigation links container */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each link item */
+nav ul li {
+  margin-left: 20px; /* spacing between links */
+}
+
+/* Link styling */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: #3b82f6; /* Blue on hover */
+  text-decoration: underline;
+}
+
+/* Optional: make navbar sticky at top */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

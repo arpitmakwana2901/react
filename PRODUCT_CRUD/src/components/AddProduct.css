@@ -1,0 +1,62 @@
+/* Full page center */
+.add-product-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Form box */
+.add-product-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.add-product-container h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Input fields */
+.add-product-form input {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+.add-product-form input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* Submit button */
+.add-product-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.add-product-form button:hover {
+  background-color: #1e40af;
+}
